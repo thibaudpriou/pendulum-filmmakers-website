@@ -1,0 +1,47 @@
+{
+  "name": "pendulum-website",
+  "version": "0.0.1",
+  "description": "This is the website of the filmmakers collective **Pendulum**.",
+  "scripts": {
+    "build": "tsc -p src/",
+    "build:watch": "tsc -p src/ -w",
+    "clean": "rm -rf node_modules dist",
+    "serve": "lite-server -c=bs-config.json",
+    "prestart": "npm run build",
+    "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint ./src/**/*.ts -t verbose"
+  },
+  "dependencies": {
+    "@angular/common": "^4.2.5",
+    "@angular/compiler": "^4.2.5",
+    "@angular/core": "^4.2.5",
+    "@angular/forms": "^4.2.5",
+    "@angular/http": "^4.2.5",
+    "@angular/platform-browser": "^4.2.5",
+    "@angular/platform-browser-dynamic": "^4.2.5",
+    "@angular/router": "^4.2.5",
+    
+    "core-js": "^2.4.1",
+    "rxjs": "5.0.1",
+    "systemjs": "0.19.40",
+    "zone.js": "^0.8.12"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "lite-server": "^2.3.0",
+    "typescript": "~2.1.0",
+
+    "tslint": "^5.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thibaudpriou/pendulum-film-makers.git"
+  },
+  "author": "Thibaud Priou",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/thibaudpriou/pendulum-film-makers/issues"
+  },
+  "homepage": "https://github.com/thibaudpriou/pendulum-film-makers#readme"
+}
