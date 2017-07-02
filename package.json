@@ -1,6 +1,6 @@
 {
   "name": "pendulum-website",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is the website of the filmmakers collective **Pendulum**.",
   "scripts": {
     "build": "tsc -p src/",
@@ -10,7 +10,8 @@
     "prestart": "npm run build",
     "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "tslint ./src/**/*.ts -t verbose"
+    "lint": "tslint ./src/**/*.ts -t verbose",
+    "validate": "npm ls"
   },
   "dependencies": {
     "@angular/common": "^4.2.5",
@@ -21,7 +22,6 @@
     "@angular/platform-browser": "^4.2.5",
     "@angular/platform-browser-dynamic": "^4.2.5",
     "@angular/router": "^4.2.5",
-    
     "core-js": "^2.4.1",
     "rxjs": "5.0.1",
     "systemjs": "0.19.40",
@@ -31,7 +31,6 @@
     "concurrently": "^3.5.0",
     "lite-server": "^2.3.0",
     "typescript": "~2.1.0",
-
     "tslint": "^5.4.3"
   },
   "repository": {
@@ -43,5 +42,10 @@
   "bugs": {
     "url": "https://github.com/thibaudpriou/pendulum-film-makers/issues"
   },
-  "homepage": "https://github.com/thibaudpriou/pendulum-film-makers#readme"
+  "homepage": "https://github.com/thibaudpriou/pendulum-film-makers#readme",
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ]
 }
