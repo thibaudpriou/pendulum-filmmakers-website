@@ -1,27 +1,29 @@
-import { NgModule }      from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { AboutComponent } from './components/about.component';
-import { DashboardComponent } from './components/dashboard.component';
-import { FooterComponent } from './components/footer.component';
-import { HeaderComponent } from './components/header.component';
-import { VideosComponent } from './components/videos.component';
+/* Feature */
+import { AboutModule } from './about/about.module';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { FooterModule } from './footer/footer.module';
+import { HeaderModule } from './header/header.module';
+import { VideosModule } from './videos/videos.module';
 
-import { RoutingModule } from './routing.module';
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   imports:      [
     BrowserModule,
-    RoutingModule
+    AppRoutingModule,
+
+    AboutModule,
+    DashboardModule,
+    FooterModule,
+    HeaderModule,
+    VideosModule
   ],
   declarations: [
-    AboutComponent,
     AppComponent,
-    DashboardComponent,
-    FooterComponent,
-    HeaderComponent,
-    VideosComponent
   ],
   bootstrap:    [ AppComponent ]
 })
