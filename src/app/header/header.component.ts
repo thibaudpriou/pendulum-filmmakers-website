@@ -5,6 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './header.component.html'
 })
 export class HeaderComponent { 
+  isCollapsed: boolean = true;
+
+  toogleCollapse() {
+    this.isCollapsed = !this.isCollapsed;
+  }
 
 
 }
