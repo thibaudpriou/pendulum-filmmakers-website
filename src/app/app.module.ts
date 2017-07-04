@@ -6,6 +6,7 @@ import { AboutModule } from './about/about.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { FooterModule } from './footer/footer.module';
 import { HeaderModule } from './header/header.module';
+import { MotionDesignModule } from './motion-design/motion-design.module';
 import { VideosModule } from './videos/videos.module';
 
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { AppRoutingModule } from './app-routing.module';
     DashboardModule,
     FooterModule,
     HeaderModule,
+    MotionDesignModule,
     VideosModule
   ],
   declarations: [
