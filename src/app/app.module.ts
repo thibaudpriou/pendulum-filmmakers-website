@@ -7,7 +7,8 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { FooterModule } from './footer/footer.module';
 import { HeaderModule } from './header/header.module';
 import { MotionDesignModule } from './motion-design/motion-design.module';
-import { VideosModule } from './videos/videos.module';
+import { ListModule } from './list/list.module';
+import { VideoModule } from './video/video.module';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -21,8 +22,9 @@ import { AppRoutingModule } from './app-routing.module';
     DashboardModule,
     FooterModule,
     HeaderModule,
+    ListModule,
     MotionDesignModule,
-    VideosModule
+    VideoModule
   ],
   declarations: [
     AppComponent,

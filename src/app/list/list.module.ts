@@ -2,15 +2,15 @@ import { NgModule } from '@angular/core';
 
 import { SharedModule } from '../shared/shared.module';
 
-import { AboutComponent } from './about.component';
+import { ListComponent } from './list.component';
 
 @NgModule({
   imports: [
     SharedModule
   ],
   declarations: [
-    AboutComponent
+    ListComponent
   ],
-  exports: [AboutComponent]
+  exports: [ListComponent]
 })
-export class AboutModule { }
+export class ListModule { }
