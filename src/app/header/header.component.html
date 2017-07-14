@@ -14,13 +14,19 @@
     <div [class.collapse]="isCollapsed" class="navbar-collapse">
       <ul class='nav navbar-nav navbar-right'>
         <li>
-          <a [routerLink]="['/about']" class="text-center">About</a>
+          <a [routerLink]="['/about']" routerLinkActive="active-link" class="text-center">
+          About
+          </a>
         </li>
         <li>
-          <a [routerLink]="['/videos']" class="text-center">Videos</a>
+          <a [routerLink]="['/videos']" routerLinkActive="active-link" class="text-center">
+          Videos
+          </a>
         </li>
         <li>
-          <a [routerLink]="['/motion-design']" class="text-center">Motion Design</a>
+          <a [routerLink]="['/motion-design']" routerLinkActive="active-link" class="text-center">
+          Motion Design
+          </a>
         </li>
       </ul>
     </div>

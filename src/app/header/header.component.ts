@@ -10,6 +10,4 @@ export class HeaderComponent {
   toogleCollapse() {
     this.isCollapsed = !this.isCollapsed;
   }
-
-
 }

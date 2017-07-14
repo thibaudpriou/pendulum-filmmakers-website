@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 
 import { SharedModule } from '../shared/shared.module';
+import { ListRoutingModule } from './list-routing.module';
 
 import { ListComponent } from './list.component';
 
 @NgModule({
   imports: [
-    SharedModule
+    SharedModule,
+    ListRoutingModule
   ],
   declarations: [
     ListComponent
-  ],
-  exports: [ListComponent]
+  ]
 })
 export class ListModule { }

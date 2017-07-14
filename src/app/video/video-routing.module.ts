@@ -5,12 +5,12 @@ import { VideoComponent } from './video.component';
 
 const routes: Routes = [
   {
-    path: 'video',
-    children: [
-      { path: ':id', component: VideoComponent}
-      // TODO faire un PageNotFoundComponent
+    path: 'video', children: [
+      {
+        path: ':id', component: VideoComponent
+      }
     ]
   }
 ];
 
-export const VideoRoutingModule: ModuleWithProviders = RouterModule.forChild(routes);
+export const VideoRoutingModule: ModuleWithProviders = RouterModule.forRoot(routes);

@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 
 import { SharedModule } from '../shared/shared.module';
+import { MotionDesignRoutingModule } from './motion-design-routing.module';
 
 import { MotionDesignComponent } from './motion-design.component';
 
 @NgModule({
-  import : [
-    SharedModule
+  imports : [
+    SharedModule,
+    MotionDesignRoutingModule
   ],
   declarations: [
     MotionDesignComponent
-  ],
-  exports: [ MotionDesignComponent ]
+  ]
 })
 export class MotionDesignModule { }

@@ -258,6 +258,11 @@ a:focus {
    Nav Styles
    ========================================================================== */
 
+a.active-link {
+  /*background: #FFFFFF;*/
+  color: #0033AA;
+}
+
 .navbar {
   border: 0px solid rgba(0, 0, 0, 0);
   background: #000000;
@@ -282,8 +287,8 @@ a:focus {
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
-  color: #ffffff;
-  opacity: 0.6;
+  color: #FFFFFF;
+  opacity: 0.3;
 }
 
 .nav>li>a {
